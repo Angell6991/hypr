@@ -7,6 +7,5 @@ WALLPAPER_DIR="$HOME/Imágenes/.wallpaper/Escritorio/"
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f \( -iname '*.jpg' -o -iname '*.png' \) | shuf -n 1)
 
 # Poner el wallpaper con swww
-# swww img "$WALLPAPER" --transition-type=any --transition-duration=4
 swww-daemon
-swww img "$WALLPAPER" 
+swww img "$WALLPAPER" --transition-type=any --transition-duration=2
